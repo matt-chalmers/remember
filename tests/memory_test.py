@@ -26,3 +26,14 @@ def test_set_and_recall():
 
     memory2 = recall(key)
     assert (memory2 == 42)
+
+def test_set_and_clear():
+    key = 'qwerty_%s' % _gen_id()
+    memory = recall(key)
+    memory.value = 42
+
+    memory2 = recall(key)
+    memory2.value = None
+
+    memory3 = recall(key)
+    assert (memory3 == None)

@@ -2,12 +2,6 @@
 from abc import ABCMeta, abstractproperty
 
 
-class _NoMemory(object):
-    pass
-
-NO_MEMORY = _NoMemory()
-
-
 class Memory(object):
 
     __metaclass__ = ABCMeta
