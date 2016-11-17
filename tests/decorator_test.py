@@ -1,5 +1,6 @@
 
-from remember.decorator import remember
+
+from ..remember.decorator import remember
 
 
 def test_brackets():
