@@ -1,5 +1,5 @@
 
-from ..remember.memory import recall, Memory
+from ..remember.memory import recall, forget, Memory
 
 
 _ID = 0
@@ -21,19 +21,34 @@ def test_recall_empty():
 
 def test_set_and_recall():
     key = 'qwerty_%s' % _gen_id()
+
     memory = recall(key)
     memory.value = 42
 
     memory2 = recall(key)
     assert (memory2 == 42)
 
-def test_set_and_clear():
+
+def test_set_and_change():
     key = 'qwerty_%s' % _gen_id()
+
+    memory = recall(key)
+    memory.value = 41
+
+    memory2 = recall(key)
+    memory2.value = 42
+
+    memory3 = recall(key)
+    assert (memory3 == 42)
+
+
+def test_set_and_forget():
+    key = 'qwerty_%s' % _gen_id()
+
     memory = recall(key)
     memory.value = 42
 
-    memory2 = recall(key)
-    memory2.value = None
+    forget(key)
 
-    memory3 = recall(key)
-    assert (memory3 == None)
+    memory2 = recall(key)
+    assert (memory2 == None)

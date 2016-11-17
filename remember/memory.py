@@ -36,3 +36,7 @@ class SimpleMemory(Memory):
 
 def recall(key):
     return SimpleMemory(key)
+
+
+def forget(key):
+    SimpleMemory(key).value = None
