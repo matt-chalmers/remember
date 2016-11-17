@@ -71,11 +71,20 @@ setup(
     # https://packaging.python.org/en/latest/requirements.html
     install_requires=[],
 
+    setup_requires=['pytest-runner'],
+
+    tests_require=[
+        'pytest-cov>=2.3.1',
+        'pytest-timeout>=1.0.0',
+        'pytest>=3.0.2'
+    ],
+
     # List additional groups of dependencies here (e.g. development
     # dependencies). You can install these using the following syntax:
     # $ pip install -e .[dev,test]
     extras_require={
-        #'dev': ['check-manifest'],
+        # 'dev': ['check-manifest'],
+        # 'test': [],
     },
     
     use_2to3=True,

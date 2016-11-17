@@ -3,6 +3,8 @@
 /build
 /temp
 /dist
+/.cache
+/.eggs
 *.pyc
 *~
 /remember.egg-info
