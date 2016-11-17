@@ -34,6 +34,10 @@ class SimpleMemory(Memory):
             self._value = self._MEMORIES[self.key] = value
 
 
+def memorise(key, value):
+    SimpleMemory(key).value = value
+
+
 def recall(key):
     return SimpleMemory(key)
 
