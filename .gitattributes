@@ -1,0 +1,33 @@
+* text=auto
+*.7z -text
+*.bin -text
+*.css text
+*.csv text
+*.dll -text
+*.doc -text
+*.dtd text
+*.exe -text
+*.gif -text -delta
+*.gpg -text
+*.gz -text -delta
+*.html text
+*.ico -text
+*.jar -text
+*.java text
+*.jpeg -text -delta
+*.jpg -text -delta
+*.js text
+*.pdf -text
+*.png -text -delta
+*.po text
+*.py text diff=python
+*.sfx -text
+*.sh text eol=lf
+*.so -text
+*.svg text
+*.swf -text
+*.sxw -text
+*.ttf -text
+*.wsdl text
+*.xml text
+*.zip -text
