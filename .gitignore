@@ -9,3 +9,5 @@
 *~
 /remember.egg-info
 .coverage
+.env
+.env.leave
