@@ -40,7 +40,7 @@ setup(
         #   3 - Alpha
         #   4 - Beta
         #   5 - Production/Stable
-        'Development Status :: 4 - Beta',
+        'Development Status :: 4 - Alpha',
 
         # Indicate who your project is intended for
         'Intended Audience :: Developers',
@@ -50,7 +50,7 @@ setup(
         'License :: OSI Approved :: MIT License',
 
         # Specify the Python versions you support here.
-        'Programming Language :: Python :: 2.7',
+        #'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3.5',
     ],
 
@@ -89,5 +89,5 @@ setup(
         # 'test': [],
     },
     
-    use_2to3=True,
+    #use_2to3=True,
 )
